@@ -1,0 +1,31 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ * See if a sequence of numbers contains a certain subsequence.
+ * @author singh
+ *
+ */
+public class Main {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		// TODO Auto-generated method stub
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		int testCases = Integer.parseInt(reader.readLine());
+		int seqLength = Integer.parseInt(reader.readLine());
+		String seq = reader.readLine();
+		int subseqLength = Integer.parseInt(reader.readLine());
+		String subseq = reader.readLine();
+		boolean check = seq.contains(subseq);
+		if (check==true){
+			System.out.println("Yes");
+		}
+		else{
+			System.out.println("No");
+		}
+			
+	}
+
+
+}
